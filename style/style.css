@@ -152,6 +152,7 @@ body{
     border-radius: 24px;
     padding: 10px 30px;
     margin: 0 10px;
+    justify-content: center;
 }
 a.button:hover, a.__active-button {
     color: #0D0D0D;
@@ -223,7 +224,6 @@ a.button:hover, a.__active-button {
     border-radius: 50%;
     background: linear-gradient(to right, rgba(68, 133, 255, 0.8), rgba(55, 125, 255, 1));
     z-index: -10;
-
 }
 .page-hero__container::before{
     top: 24.3%;
@@ -247,7 +247,6 @@ a.button:hover, a.__active-button {
     margin-bottom: 20px;
 }
 
-.__hero-titel::after,
 .__hero-titel::before{
     content: '';
     position: absolute;
@@ -256,21 +255,30 @@ a.button:hover, a.__active-button {
     border-radius: 50%;
     background: linear-gradient(to bottom, rgba(255, 142, 142, 1), rgba(246, 36, 36, 1));
     z-index: -10;
-
 }
 .__hero-titel::before{
     top: 547px; 
     left: -10.6%;
-}
-.__hero-titel::after{
-    top: 97px;
-    right: -300px;
 }
 
 .__hero-text {
     text-align: center;
     margin-bottom: 20px;
 }
+.__hero-text::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(255, 142, 142, 1), rgba(246, 36, 36, 1));
+    z-index: -10;
+}
+.__hero-text::before{
+    top: 70px; 
+    right: 10px; 
+}
+
 .hero-images{
     position: relative;
     margin-top: 40px;
@@ -399,13 +407,13 @@ a.button:hover, a.__active-button {
     z-index: -10;
 }
 .about-us__images::before {
-    left: -2.439024%; /* -30/1230 */
-    top:-1.463415%; /* -18/1230 */
+    left: 0; 
+    top: 0; 
     background: url('/images/Group 2165.svg') no-repeat;
 }
 .about-us__images::after{
-    bottom: -1.463415%; /* -18/1230 */
-    right: -1.463415%; /* -18/1230 */
+    bottom: 0; 
+    right: 0; 
     background: url('/images/Group 2144.svg') no-repeat;
 }
 
@@ -442,8 +450,9 @@ a.button:hover, a.__active-button {
     margin-top: 23px;
     margin-bottom: 75px;
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
-    gap:35px;
+    gap:40px;
 }
 .our-service__card {
     display: flex;
@@ -507,18 +516,19 @@ a.button:hover, a.__active-button {
 }
 .our-portfolio__cards::before {
     transform: rotate(-15deg);
-    right: -2.439024%; /* -30/1230 */
-    top:-100px; /* -18/1230 */
+    right: 20px;
+    top:-100px; 
     background: url('/images/Group 2144.svg') no-repeat;
 }
 .our-portfolio__cards::after{
     transform: rotate(15deg);
-    bottom: 50%; /* -18/1230 */
-    right: 60%; /* -18/1230 */
+    bottom: 50%; 
+    right: 60%;
     background: url('/images/Group 2144.svg') no-repeat;
 }
 
 .our-portfolio__card {
+    flex: 1 1 33.33333%;
     max-width: 350px;
     max-height: 350px;
     margin-bottom: 50px;
@@ -553,15 +563,15 @@ a.button:hover, a.__active-button {
     z-index: -10;
 }
 .testimonial__container::before {
-    transform: rotate(15deg);
-    left: -2.439024%; /* -30/1230 */
-    top:-1.463415%; /* -18/1230 */
+    transform: rotate(15deg) translate(-2.439024%, -1.463415%);
+    left: 0; /* -30/1230 */
+    top:0; /* -18/1230 */
     background: url('/images/Group 2144.svg') no-repeat;
 }
 .testimonial__container::after{
     transform: rotate(15deg);
-    bottom: -1.463415%; /* -18/1230 */
-    right: -1.463415%; /* -18/1230 */
+    bottom: 0;
+    right: 20px;
     background: url('/images/Group 2144.svg') no-repeat;
 }
 .testimonial__cards {
@@ -607,10 +617,16 @@ a.button:hover, a.__active-button {
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+    gap: 50px;
 }
 .collaboration__text {
     text-align: center;
     order: 2;
+}
+.__collaboration{
+    margin-top: 20px;
+    justify-self: center;
+    max-width: 200px;
 }
 .collaboration__images {
     display: grid;
@@ -911,8 +927,7 @@ a.button:hover, a.__active-button {
         }
     }
     .our-service__cards {
-        grid-template-columns: 1fr 1fr;
-        gap:40px;
+        grid-template-columns: repeat(2, minmax(162px, 302px));
         margin-top: 150px;
         margin-bottom: 130px;
     }
@@ -927,7 +942,7 @@ a.button:hover, a.__active-button {
     }
     .__our-services__text{
         text-align: left;
-        max-width: 521px;
+        max-width: 42.016129%; 
     }
 }
 @media screen and (min-width:768px) {
@@ -938,7 +953,6 @@ a.button:hover, a.__active-button {
     }
     .our-portfolio__cards {
         flex-direction: row;
-        align-items: center;
         gap: 54px;
         margin-bottom: 94px;
     }
