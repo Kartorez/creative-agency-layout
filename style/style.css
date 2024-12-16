@@ -290,14 +290,14 @@ a.button:hover, a.__active-button {
     width: 100px;
     height: 80px;
     z-index: -10;
-    background: url('/images/Group 2140.svg') no-repeat;
+    background: url('/images/Group_2140.svg') no-repeat;
 }
 .hero-images::before{
     right: -10px;
 }
 .hero-images::after{
     bottom: 0px;
-    background: url('/images/Group 2165.svg') no-repeat;
+    background: url('/images/Group_2165.svg') no-repeat;
 }
 .hero-image {
     margin: 12px 15px 15px 9px;
@@ -409,12 +409,12 @@ a.button:hover, a.__active-button {
 .about-us__images::before {
     left: 0; 
     top: 0; 
-    background: url('/images/Group 2165.svg') no-repeat;
+    background: url('/images/Group_2165.svg') no-repeat;
 }
 .about-us__images::after{
     bottom: 0; 
     right: 0; 
-    background: url('/images/Group 2144.svg') no-repeat;
+    background: url('/images/Group_2144.svg') no-repeat;
 }
 
 .our-services__container {
@@ -518,13 +518,13 @@ a.button:hover, a.__active-button {
     transform: rotate(-15deg);
     right: 20px;
     top:-100px; 
-    background: url('/images/Group 2144.svg') no-repeat;
+    background: url('/images/Group_2144.svg') no-repeat;
 }
 .our-portfolio__cards::after{
     transform: rotate(15deg);
     bottom: 50%; 
     right: 60%;
-    background: url('/images/Group 2144.svg') no-repeat;
+    background: url('/images/Group_2144.svg') no-repeat;
 }
 
 .our-portfolio__card {
@@ -566,13 +566,13 @@ a.button:hover, a.__active-button {
     transform: rotate(15deg) translate(-2.439024%, -1.463415%);
     left: 0; /* -30/1230 */
     top:0; /* -18/1230 */
-    background: url('/images/Group 2144.svg') no-repeat;
+    background: url('/images/Group_2144.svg') no-repeat;
 }
 .testimonial__container::after{
     transform: rotate(15deg);
     bottom: 0;
     right: 20px;
-    background: url('/images/Group 2144.svg') no-repeat;
+    background: url('/images/Group_2144.svg') no-repeat;
 }
 .testimonial__cards {
     display: flex;
@@ -647,13 +647,13 @@ a.button:hover, a.__active-button {
     width: 100px;
     left: -20px; 
     top:56px; 
-    background: url('/images/Group 2140.svg') no-repeat;
+    background: url('/images/Group_2140.svg') no-repeat;
 }
 .collaboration__images::after{
     width: 200px;
     bottom: 10px; 
     right: 150px; 
-    background: url('/images/Group 21401.svg') no-repeat;
+    background: url('/images/Group_21401.svg') no-repeat;
 }
 .collaboration__image {
     border-radius: 16px;
