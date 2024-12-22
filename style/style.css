@@ -64,7 +64,7 @@ label {
 legend {
 	display: block;
 }
-.wraper{
+.wrapper{
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -207,6 +207,9 @@ a.button:hover, a.__active-button {
 }
 .header__burger-menu:after {
     bottom: -6px;
+}
+.main{
+	flex: 1 1 auto;
 }
 .page-hero__container {
     position: relative;
